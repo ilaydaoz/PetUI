@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+  background-image: url('https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 300px;
+  border-radius: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #8e24aa;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.btn-block {
+  margin-top: 20px;
+}
+
+.animal-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.animal-icon {
+  font-size: 48px;
+  margin: 0 10px;
+}
+
+.btn-primary {
+  background-color: #8e24aa;
+  border-color: #8e24aa;
+}
+
+.card {
+  border-radius: 0 !important;
+}
+
+.card-header {
+  border-radius: 0 !important;
+}
+
+.btn-outline-primary {
+  color: #8e24aa;
+  border-color: #8e24aa;
+}
+
+.btn-outline-primary:hover {
+  color: white;
+  background-color: #8e24aa;
+  border-color: #8e24aa;
+}
