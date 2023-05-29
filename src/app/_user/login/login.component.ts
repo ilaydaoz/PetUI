@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginServiceService } from './login-service.service';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -22,11 +21,11 @@ export class LoginComponent implements OnInit {
     };
 
     this.loginService.login(model).subscribe(
-      response => {
+      (response:LoginComponent) => {
 
         console.log('Login successful:', response);
       },
-      error => {
+      (error: Error) => {
 
         console.error('Login failed:', error);
       }

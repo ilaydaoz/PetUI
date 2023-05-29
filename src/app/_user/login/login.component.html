@@ -28,16 +28,16 @@
               <form (ngSubmit)="login()">
                 <div class="form-group">
                   <label for="username">Kullanıcı Adı</label>
-                  <input type="text" id="username" class="form-control" placeholder="Kullanıcı adınızı girin" [(ngModel)]="username">
+                  <input type="text" id="username" class="form-control" placeholder="Kullanıcı adınızı girin" [(ngModel)]="username" name="username">
                 </div>
                 <div class="form-group">
                   <label for="password">Parola</label>
-                  <input type="password" id="password" class="form-control" placeholder="Parolanızı girin" [(ngModel)]="password">
+                  <input type="password" id="password" class="form-control" placeholder="Parolanızı girin" [(ngModel)]="password" name="password">
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Giriş Yap</button>
               </form>
               <div class="text-center mt-3">
-                <a routerLink="/auth/register" class="btn btn-outline-primary btn-block">Üye Ol </a>
+                <a routerLink="/auth/register" class="btn btn-outline-primary btn-block">Üye Ol</a>
               </div>
             </div>
           </div>
