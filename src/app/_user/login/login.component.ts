@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginServiceService } from './login-service.service';
 
 @Component({
   selector: 'app-login',
@@ -6,10 +7,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  username: string | undefined;
+  password: string | undefined;
 
-  constructor() { }
+  constructor(private loginService: LoginServiceService) { }
 
   ngOnInit(): void {
   }
 
+  login(): void {
+    const model = {
+      username: this.username,
+      password: this.password
+    };
+
+    this.loginService.login(model).subscribe(
+      response => {
+
+        console.log('Login successful:', response);
+      },
+      error => {
+
+        console.error('Login failed:', error);
+      }
+    );
+  }
 }
